@@ -6,14 +6,14 @@ import Card from "./Components/Card/Card"
 const apiKey = 'UdNwRPuVNwgISuVtAaWXTvvwCwtyr4atKrlteVUY'
 
 function App() {
-  const [apod, setApod] = useState({});
+  const [apodData, setApodData] = useState({});
 
   useEffect(() => {
     axios
-      .get(`https://api.nasa.gov/planetary/apod?api_key=${apiKey}&date=2020-10-20`)
+      .get(`https://api.nasa.gov/planetary/apod?api_key=${apiKey}&date=2020-10-21`)
       .then(response => {
         console.log(response);
-        setApod({ photo: response.data.url, explanation: response.data.explanation, title: response.data.title, date: response.data.date })
+        setApodData({ photo: response.data.url, explanation: response.data.explanation, title: response.data.title, date: response.data.date, copyright: response.data.copyright })
       })
       .catch(error => {
         console.log('Something went wrong', error);
@@ -23,7 +23,7 @@ function App() {
 
   return (
     <div className="App">
-      <Card apod={apod} />
+      <Card apodData={apodData} />
     </div>
   );
 }
