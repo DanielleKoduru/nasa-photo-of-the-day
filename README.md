@@ -38,7 +38,7 @@ This project was put together using create-react-app (CRA). You will not need to
 
 
 ### Task 2: MVP
-<!-- NASA website -->
+<!-- My NASA API Key -->
 <!-- zMInhkZNSqYfuTYCd5Am7HJvqVLw16YyAREdzSjB -->
 
 <!-- Object Key -->
