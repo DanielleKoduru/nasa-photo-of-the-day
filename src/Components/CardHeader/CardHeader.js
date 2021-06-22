@@ -1,6 +1,6 @@
 import React from "react";
 
-const CardTitle = (props) => {
+const CardHeader = (props) => {
 
     return (
         <div>
@@ -10,4 +10,4 @@ const CardTitle = (props) => {
 }
 
 
-export default CardTitle;
+export default CardHeader;
